@@ -44,8 +44,24 @@ print(f"Weather in {city}: {weather_data['weather'][0]['description']}")
 
 #Write a report of what you remember about Dictionary, Fuctions and API
 
-# Homework Question:
+
 # Function: Write a function that returns the sum of all even numbers in a given list.
 # example input: [1, 2, 4, 6, 7, 9]
 # example output: 12
+
+
+"""
+Homework:
+(10-15 mins)
+- What is an LLM? --> A large language model (LLM) is a type of artificial intelligence (AI) program that can recognize and generate text
+
+- What are tokens? --> Tokens can be thought of as pieces of words.
+
+- Explain the basic mechanism for how LLMs generate text. --> It looks at the tokens its generated so far, and predicts the most likely token to appear next based off how humans talk.
+
+(5 mins)
+- What is git used for? --> Git is a DevOps tool used for source code management.
+
+- What is Github? --> GitHub is a developer platform that allows developers to create, store, manage and share their code.
+"""
 

@@ -14,8 +14,6 @@ print(total)
 
 
 
-
-
 # Convert these 2 lists into a dictionary:
 keys_list = ['Ten', 'Twenty', 'Thirty', 'Forty']
 values_list = [10, 20, 30, 40]
