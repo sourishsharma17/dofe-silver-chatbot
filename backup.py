@@ -1,3 +1,22 @@
+# Q4: Ask the user for 2 numbers, and use a loop to print out all of the common divisors of the two numbers
+# e.g. input: 30 and 36
+# output: 1, 2, 3, 6
+
+num1 = int(input("Enter a number: "))
+num2 = int(input("Enter a second number: "))
+
+for small_num in range(1, min(num1, num2) + 1):
+  if num1 % small_num == 0 and num2 % small_num == 0:
+    print(small_num)
+
+
+
+
+
+
+
+
+
 from random import randint
 from time import sleep
 
