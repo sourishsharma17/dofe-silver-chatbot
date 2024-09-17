@@ -1,29 +1,7 @@
-from random import randint
-from time import sleep
-
-
-lst = [randint(0, 9),
-       randint(0, 9),
-       randint(0, 9),
-        randint(0, 9),
-        randint(0, 9),
-        randint(0, 9),
-      randint(0, 9),
-       randint(0, 9)]
+# Q4: Ask the user for 2 numbers, and use a loop to print out all of the common divisors of the two numbers
+# e.g. input: 30 and 36
+# output: 1, 2, 3, 6
 
 
 
-nums = "".join([str(num) for num in lst])
 
-print(nums)
-sleep(1)
-print("\033c", end="")
-
-ans = input("Please enter the numbers: ")
-
-
-
-if ans == nums:
-  print("Well done!!!")
-
-print(nums)
