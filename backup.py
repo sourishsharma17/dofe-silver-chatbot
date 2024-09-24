@@ -1,3 +1,89 @@
+# Q1: Write a program which goes through a list of numbers and outputs the results when every even number is multiplied together.
+
+nums = [2, 3, 5, 6, 7, 10, 13, 14]
+# expected output: 1680 (becuase 2*6*10*14 = 1680)
+
+total = 1
+
+for i in nums:
+    if i % 2 == 0:
+        total *= i
+
+print(total)
+
+# Q2: Now output the sum of the squares of the list.
+
+#nums = [2, 3, 5, 6, 7, 10, 13, 14]
+# expected output: 588 (becuase 4+9+25+36+49+100+169+196 = 588)
+
+
+nums = [2, 3, 5, 6, 7, 10, 13, 14]
+
+# list comprehension
+total = sum(num ** 2 for num in nums)
+print(total)
+
+total = 0
+for num in nums:
+    total += num **2
+
+print(total)
+
+
+
+# Q3: ask the user for a sentence and output the number of vowels in the sentence
+# example input:   "hello world!"
+# expected output: 3
+
+sentence = input("Please enter a sentence: ")
+
+vowels = "aeiouAEIOU"
+
+vowel_count = 0
+
+for char in sentence:
+    if char in vowels:
+        vowel_count += 1
+
+print("Number of vowels is:", vowel_count)
+
+
+
+# Q4: Write a program which goes through a list of numbers and prints the numbers which are divisible by both 3 and 5.
+lst = [15, 25, 10, 30, 45, 20, 50]
+# expected output: 15, 30, 45
+
+lst = [15, 25, 10, 30, 45, 20, 50]
+
+for num in lst:
+    if num % 3 == 0 and num % 5 == 0:
+        print(num)
+
+
+
+# Q5: Write a program which goes through a list of numbers and creates a new list without any duplicates.
+lst = [1, 2, 3, 2, 4, 1, 5]
+# expected output: [1, 2, 3, 4, 5]
+
+lst = [1, 2, 3, 2, 4, 1, 5]
+
+dif_lst = []
+for num in lst:
+    if num not in dif_lst:
+        dif_lst.append(num)
+
+print(dif_lst)
+
+
+
+
+
+
+
+
+
+
+
 # Q4: Ask the user for 2 numbers, and use a loop to print out all of the common divisors of the two numbers
 # e.g. input: 30 and 36
 # output: 1, 2, 3, 6
