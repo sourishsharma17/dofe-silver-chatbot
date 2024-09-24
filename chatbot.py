@@ -1,13 +1,13 @@
-
 from openai import OpenAI
 import os
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+Gerald = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 
 message_history = [
-                   {"role": "system", "content": "You are a 40 year old british king."}
+                   {"role": "system", "content": "You are a 40 year old british king. Your name is Gerald."}
                   ]
+
 
 while True:
 
@@ -18,8 +18,7 @@ while True:
     message_history.append({"role": "user", "content": prompt})
 
 
-
-    stream = client.chat.completions.create(
+    stream = Gerald.chat.completions.create(
         model="gpt-4o",
         messages=message_history,
         stream=True,

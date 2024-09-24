@@ -1,3 +1,18 @@
+# Quiz Game
+
+quest = input("What is the capital of England? ")
+
+#if quest == "London" or quest == "london" or quest == "the city of london":
+
+if "london" in quest.lower():
+  print("Well done!!!!!!!!!")
+else:
+  print("YOU'RE WRONG!")
+
+
+
+
+
 # Q1: Write a program which goes through a list of numbers and outputs the results when every even number is multiplied together.
 
 nums = [2, 3, 5, 6, 7, 10, 13, 14]
